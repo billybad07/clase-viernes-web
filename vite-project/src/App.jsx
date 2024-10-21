@@ -1,24 +1,43 @@
 import './App.css'
 import { Link } from 'react-router-dom';
 import logo from './assets/logo-bancolombia.jpeg';
+import logo2 from './assets/logobanco.png'
+import logoizquierda from './assets/izquierda.png'
+import logoderecha from './assets/derecha.png'
 
 function App() {
 return(
-    <div>
-      <img src={logo} alt='' style={{width:"40%", marginRight:"6%"}}/>
-      <h1>Bienvenido a banpolombia</h1>
-      <p>Maneja tus finanzas con P de Polombia</p>
+  
+    <div id="container">
+      <div class="boxes1">
+        <img src={logoizquierda} alt='' style={{width:"35%", height:"100%" }}/>
+      </div>
       
-      <Link to={'/login'}>
-      <button style={{marginRight:"20px"}}>Login</button>
-      </Link>
+      <div class="boxes2">
+        <img src={logo} alt='' style={{width:"60%", marginRight:"6%" }}/>
+        <h1>Bienvenido a banpolombia</h1>
+        <p>Maneja tus finanzas con P de Polombia</p>
       
-      <Link to={'/register'}>
-      <button style={{marginLeft:"20px"}}>Register</button>
-      </Link>
+        <Link to={'/login'}>
+        <button style={{marginRight:"20px", backgroundColor:"yellow"}}>Login</button>
+        </Link>
+      
+        <Link to={'/register'}>
+        <button style={{marginLeft:"20px", backgroundColor:"yellow"}}>Register</button>
+      
+        </Link>
+        <div>
+        <img src={logo2} alt='' style={{width:"100px", height:"100px"}}/>
+        </div>
+      </div>
+      <div class="boxes3">
+        <img src={logoderecha} alt='' style={{width:"25%", height:"100%"}}/>
+      </div>
 
+    
     </div>
   )
 }
+
 
 export default App

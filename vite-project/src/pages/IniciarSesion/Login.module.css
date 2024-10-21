@@ -1,11 +1,13 @@
 /* Login.css */
+
+
 .login-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f2f2f2;
+    background-color: white;
   }
   
   .login-form {
@@ -27,10 +29,19 @@
   }
   
   .login-button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: yellow;
+    color: black;
     padding: 12px 20px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
+  }
+  .boxes {
+    background-color: white;
+    width: 100%; 
+  }
+  .boxesnegro {
+    background-color: black;
+    width: 100%; 
+    height: 7%;
   }

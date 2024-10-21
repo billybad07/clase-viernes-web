@@ -1,9 +1,18 @@
 import styles from './Register.module.css';
+import logo2 from './imagen/logobanco.png';
+import design from './imagen/design.png'
+import design2 from './imagen/design2.png'
+import { Link } from 'react-router-dom';
 
 export const Register = () => {
     return (
         <div className={styles['login-container']}>
-            <h1>Bienvenido Nuevo Usuario</h1>
+        
+            <div className={styles['boxes']}>
+                <img src={design} alt='' style={{width:"100%", height:"100px" }}/>
+                <img src={logo2} alt='' style={{width:"100px", height:"100px"}}/>
+            </div>
+            <h2>Bienvenido Nuevo Usuario</h2>
             <form action="" className={styles['login-form']}>
                 <div className={styles["form-group"]}>
                     <label htmlFor="nombre">Nombre:</label>
@@ -15,7 +24,7 @@ export const Register = () => {
                     <input type="text" id="Apellidoreg" className="form-input" />
                 </div>
                 <div className={styles["form-group"]}>
-                    <label htmlFor="correo">Correo electronico:</label>
+                    <label htmlFor="correo">Correo electronico:</label> 
                     <input type="text" id="correoreg" className="form-input"/>
                 </div>
                 <div className={styles["form-group"]}>
@@ -26,8 +35,12 @@ export const Register = () => {
                     <label htmlFor="confcontraseña">Confirmar Contraseña:</label>
                     <input type="text" id="confcontraseña" className="form-input" />
                 </div>
-                <button className="login-button">Registrarse</button>
+                <Link to={'/login'}>
+                <button className={styles['login-button']}>Registrarse</button>
+                </Link>
+
             </form>
+            <img src={design2} alt='' style={{width:"100%", height:"100px" }}/>
         </div>
     )
 }
