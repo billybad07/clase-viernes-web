@@ -1,0 +1,48 @@
+/* Login.css */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 600px;
+    background-color: white;
+    border-color: black;
+  }
+  
+  .login-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .login-button {
+    background-color: yellow;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .boxes {
+    background-color: white;
+    width: 100%; 
+  }
+  .boxesnegro {
+    background-color: black;
+    width: 100%; 
+    height: 7%;
+  }
